@@ -1,4 +1,5 @@
 // index.js
+
 const ramensURL = 'http://localhost:3000/ramens'
 const ramenMenu = document.querySelector('#ramen-menu')
 const ramenDetailImage = document.querySelector('.detail-image')
@@ -7,6 +8,8 @@ const ramenDetailRestaurant = document.querySelector('.restaurant')
 const ratingDisplay = document.querySelector('#rating-display')
 const commentDisplay = document.querySelector('#comment-display')
 const newRamenForm = document.querySelector('#new-ramen')
+
+
 // Callbacks
 const handleClick = (ramen) => {
   //! creating a function that will pull in the ramen data and fill out the details 
@@ -31,6 +34,7 @@ const addSubmitListener = (e) => {
     displayRamens(newRamen)
     e.target.reset()
 }
+
 const displayRamens = (ramensObj) => {
     const ramenImg = document.createElement('img')
     ramenImg.className = 'new-ramen'
@@ -50,6 +54,7 @@ const displayRamens = (ramensObj) => {
               }
           })
   }
+
   const main = () => {
       // Invoke displayRamens here
       getJSON(ramensURL)
@@ -60,7 +65,10 @@ const displayRamens = (ramensObj) => {
       // Invoke addSubmitListener here
       newRamenForm.addEventListener('submit', addSubmitListener)
   }
+
   main()
+
+  
   // Export functions for testing
   export {
       displayRamens,
