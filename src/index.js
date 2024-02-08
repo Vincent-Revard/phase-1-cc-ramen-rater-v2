@@ -59,6 +59,7 @@ const displayRamens = (ramensObj) => {
       // Invoke displayRamens here
       getJSON(ramensURL)
           .then((ramensData) => {
+              handleClick(ramensData[0])
               ramensData.forEach((ramen) => displayRamens(ramen))
           })
           .catch(console.error)
