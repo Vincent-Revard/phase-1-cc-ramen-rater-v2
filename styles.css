@@ -31,7 +31,7 @@ header {
 #ramen-menu img {
   flex: 0 1 auto;
   height: 150px;
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
   cursor: pointer;
 }
 
@@ -99,4 +99,19 @@ form h4 {
   margin: 0.5rem 0;
   color: white;
   background-color: black;
+}
+.ramen-item {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.ramen-item button {
+  padding: 8px 20px; /* Adjust padding for button size */
+  font-size: 15px; /* Adjust font size as needed */
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.ramen-item img {
+  height: 2000px;
 }
